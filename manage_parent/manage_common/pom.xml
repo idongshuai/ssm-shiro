@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>manage_parent</artifactId>
+        <groupId>net.dongshuai</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.dongshuai</groupId>
+    <artifactId>manage_common</artifactId>
+    <packaging>jar</packaging>
+    <description>公共模块</description>
+
+    <name>manage_common</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <qiniu-version>[7.2.0, 7.2.99]</qiniu-version>
+        <aliyun-oss-version>2.5.0</aliyun-oss-version>
+        <qcloud-cos-version>4.4</qcloud-cos-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>${qiniu-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>${aliyun-oss-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qcloud</groupId>
+            <artifactId>cos_api</artifactId>
+            <version>${qcloud-cos-version}</version>
+        </dependency>
+    </dependencies>
+</project>
